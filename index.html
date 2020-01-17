@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="嵌入Android/IOS手机APP程序内部的H5页面">
+    <link rel="stylesheet" href="./resources/css/lib/mui.min.css" />
+    <link rel="stylesheet" href="./resources/css/page.css" />
+    <title>H5页面</title>
+</head>
+<body>
+    <div class="content">
+        <!-- 支付方式 -->
+        <div id="payMethod" class="pay-method">
+            <h3 class="pay-title">选择支付方式</h3>
+            <div class="mui-input-row mui-radio pay-type-item">
+                <label class="pay-label"><img id="wechartImg" src="" alt="" class="pay-icon">微信支付</label>
+                <input name="radio1" type="radio" value="0" checked>
+            </div>
+            <div class="mui-input-row mui-radio pay-type-item">
+                <label class="pay-label"><img id="zfbImg" src="" alt="" class="pay-icon">支付宝支付</label>
+                <input name="radio1" value="1" type="radio">
+            </div>
+        </div>
+        <div id="payBtn" class="pay-btn">立即支付</div>
+    </div>
+
+    <script type="text/javascript" src="./resources/js/lib/flexible-10.js"></script><!--自适应布局-->
+    <script type="text/javascript" src="./resources/js/lib/zepto.min.js"></script><!--轻量级JS库-->
+    <script type="text/javascript" src="./resources/js/lib/mui.min.js"></script><!--mui组件库-->
+    <script type="text/javascript" src="./resources/js/page.js"></script><!--自定义-->
+    <script type="text/javascript" src="./resources/js/CallAPPFunction.js"></script><!--调用APP接口-->
+</body>
+</html>
