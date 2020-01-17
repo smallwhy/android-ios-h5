@@ -2,4 +2,4 @@
 
 #### 1、使用单位: `rem`
 #### 2、UI组件: `mui` https://dev.dcloud.net.cn/mui/ui/
-#### 3、JS库：Zepto https://www.html.cn/doc/zeptojs_api/#
+#### 3、JS库：`Zepto` https://www.html.cn/doc/zeptojs_api/#
