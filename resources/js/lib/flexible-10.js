@@ -59,7 +59,7 @@
         docEl.firstElementChild.appendChild(d);
         var defaultFontSize = parseFloat(window.getComputedStyle(d, null).getPropertyValue('width'));
         // d.remove();
-        var portrait = "html{font-size:" + ((width / (_designWidth / _rem2px) / defaultFontSize) * 200) + "%;}";
+        var portrait = "html{font-size:" + ((width / (_designWidth / _rem2px) / defaultFontSize) * ((width>=768&&/(iPad|iPod|iOS)/i.test(navigator.userAgent)) ? 100 : 200)) + "%;}";
         var dpStyleEl = doc.getElementById('dpAdapt');
         if (!dpStyleEl) {
             dpStyleEl = document.createElement('style');
